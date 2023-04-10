@@ -76,4 +76,4 @@ const HTU = () => {
   );
 };
 
-export default SectionWrapper(HTU, "work");
+export default SectionWrapper(HTU, "HTU");

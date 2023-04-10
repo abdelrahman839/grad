@@ -1,11 +1,11 @@
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
-import Hero from "./Hero";
+import Hero from "./Fly";
 import Navbar from "./Navbar";
 import About from "./About";
-import Tech from "./Tech";
+import Tool from "./Tool";
 import HTU from "./HTU";
-import Works from "./Works";
-import Feedbacks from "./Feedbacks";
+import Downloads from "./Downloads";
+import Tools from "./Tools";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
@@ -14,10 +14,10 @@ export {
   Hero,
   Navbar,
   About,
-  Tech,
+  Tool,
   HTU,
-  Works,
-  Feedbacks,
+  Downloads,
+  Tools,
   Contact,
   CanvasLoader,
   EarthCanvas, 

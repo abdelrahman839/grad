@@ -19,10 +19,9 @@ import {
   step2,
   step3,
   step4,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  Google,
+  windows
 } from "../assets";
 
 export const navLinks = [
@@ -31,12 +30,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "features",
-    title: "Features",
-  },
-  {
     id: "HTU",
     title: "How To Use",
+  },
+  {
+    id: "tools",
+    title: "Tools",
+  },
+  {
+    id: "downloads",
+    title: "Downloads",
   },
   {
     id: "contact",
@@ -120,146 +123,70 @@ const technologies = [
 
 const steps = [
   {
-    title: "React.js Developer",
+    title: "Create Account",
     icon: step1,
     iconBg: "#383E56",
     step: "First step",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "You cannot use the app without first creating an account.",
+      "It's completely free for now.",
+      "In the future it will be with subscriptions.",
+      
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Download Fly",
     icon: step2,
     iconBg: "#E6DEDD",
     step: "Second step",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Download the application based on your operating system.",
+      "The app is now for windows and android.",
+      "In the future the app will work on iOS."
     ],
   },
   {
-    title: "Web Developer",
+    title: "Orders",
     icon: step3,
     iconBg: "#383E56",
     step: "Third step",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    icon: step4,
-    iconBg: "#E6DEDD",
-    step: "Fourth step",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "There are some basic gestures that you need to know to be able to use the app.",
+      "There are also some basic voice commands that you need to know in order to be able to use the app without hand gestures.",
     ],
   },
 ];
 
-const testimonials = [
+
+
+const download = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "For Windows",
+    description:
+      "Developed and maintained using Python.",
+    tags: [
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+    ],
+    image: windows,
+    source_code_link: "",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "For Android",
+    description:
+      "Developed and maintained using flutter.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Google,
+    source_code_link: "",
   },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
-
-export { services, technologies, steps, testimonials, projects };
+export { services, technologies, steps, download };

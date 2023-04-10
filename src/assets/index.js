@@ -26,10 +26,8 @@ import step2 from "./steps/step2.png";
 import step3 from "./steps/step3.png";
 import step4 from "./steps/step4.png";
 
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import windows from './windows.avif'
+import Google from './Google.png'
 
 export {
   logo,
@@ -57,7 +55,6 @@ export {
   step2,
   step3,
   step4,
-  carrent,
-  jobit,
-  tripguide,
+  windows,
+  Google,
 };

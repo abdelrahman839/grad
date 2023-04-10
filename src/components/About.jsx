@@ -45,10 +45,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]'
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-
+        In the past few years, massive advancements were made in different fields of technology, especially in the fields of image processing and machine learning, as well as the massive improvement of the computational power of the average computer, most computers are capable of running what were thought to be resource-intensive applications smoothly. The traditional interaction with computers (through mouse and keyboard), does not offer the user the ease and flexibility that an average computer can offer, during pandemics like covid, physical interactions led to the further spreading of the virus, the previous reasons lead us to think of ways we can utilize those advancements to minimize the physical interaction with the computer hardware while making the interaction with the computer easier and flexible, without the addition of expensive hardware that may not be affordable by many users while maintaining good performance.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
