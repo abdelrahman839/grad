@@ -28,7 +28,6 @@ const SignIn = () => {
                 localStorage.setItem("Fly_User_Token",data.token)
                 navigate('/')
             }
-
             setLoading(false)
 
         }
