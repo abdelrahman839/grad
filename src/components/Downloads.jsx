@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { download } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useNavigate } from "react-router-dom"
 
 const DownloadCard = ({
   index,
@@ -15,10 +16,19 @@ const DownloadCard = ({
   image,
   source_code_link,
 }) => {
+  const navigate = useNavigate();
+  const isAuth = () => {
+    if (localStorage.getItem("Fly_User_Token") == null) {
+      navigate('/sign-in')
+    } else {
+      window.open(source_code_link, "_blank")
+    }
+
+  }
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      onClick={() => window.open(source_code_link, "_blank")}
-      style={{cursor: "pointer"}}
+      onClick={() => isAuth()}
+      style={{ cursor: "pointer" }}
     >
       <Tilt
         options={{
@@ -28,7 +38,9 @@ const DownloadCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'        >
+        <div
+
+          className='relative w-full h-[230px]'>
           <img
             src={image}
             alt='Download_image'
@@ -78,6 +90,7 @@ const Downloads = () => {
           <DownloadCard key={`Download-${index}`} index={index} {...download} />
         ))}
       </div>
+
     </>
   );
 };
