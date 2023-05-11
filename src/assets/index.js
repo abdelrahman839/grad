@@ -26,7 +26,7 @@ import step2 from "./steps/step2.png";
 import step3 from "./steps/step3.png";
 import step4 from "./steps/step4.png";
 
-import windows from './windows.avif'
+import windows from './windows.png'
 import Google from './Google.png'
 
 export {
