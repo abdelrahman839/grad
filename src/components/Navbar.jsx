@@ -106,6 +106,12 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              {loggedIn && <button
+                className='bg-tertiary py-3 px-3 rounded-xl outline-none w-fit text-white shadow-md shadow-primary hover:text-red-900'
+                onClick={signOut}
+              >
+                sign out
+              </button>}
             </ul>
           </div>
         </div>
