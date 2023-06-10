@@ -29,6 +29,8 @@ import step4 from "./steps/step4.png";
 import windows from './windows.png'
 import Google from './Google.png'
 
+import apple from './apple.jpg'
+
 export {
   logo,
   event,
@@ -57,4 +59,5 @@ export {
   step4,
   windows,
   Google,
+  apple,
 };

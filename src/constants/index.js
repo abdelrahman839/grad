@@ -21,7 +21,8 @@ import {
   step4,
   threejs,
   Google,
-  windows
+  windows,
+  apple,
 } from "../assets";
 
 export const navLinks = [
@@ -131,7 +132,7 @@ const steps = [
       "You cannot use the app without first creating an account.",
       "It's completely free for now.",
       "In the future it will be with subscriptions.",
-      
+
     ],
   },
   {
@@ -176,7 +177,7 @@ const download = [
   {
     name: "For Android",
     description:
-      "Developed and maintained using flutter.",
+      "Coming Soon.",
     tags: [
       {
         name: "flutter",
@@ -186,6 +187,19 @@ const download = [
     image: Google,
     source_code_link: "",
   },
+  {
+    name: "For Ios",
+    description:
+      "Coming Soon.",
+    tags: [
+      {
+        name: "swift",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: apple,
+    source_code_link: "",
+  }
 
 ];
 

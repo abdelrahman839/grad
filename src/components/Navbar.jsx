@@ -9,8 +9,21 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const signOut = () => {
+    localStorage.clear();
+    setLoggedIn(false);
+  }
+  const isAuth = () => {
+    if (localStorage.getItem("Fly_User_Token") == null) {
+      setLoggedIn(false)
+    } else {
+      setLoggedIn(true)
+    }
+  }
 
   useEffect(() => {
+    isAuth()
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 100) {
@@ -46,7 +59,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -57,7 +70,15 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          {loggedIn && <button
+            className='bg-tertiary py-3 px-3 rounded-xl outline-none w-fit text-white shadow-md shadow-primary hover:text-red-900'
+            onClick={signOut}
+          >
+            sign out
+          </button>}
+
         </ul>
+
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
