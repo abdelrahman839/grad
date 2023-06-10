@@ -172,8 +172,8 @@ const download = [
       "Coming Soon.",
     tags: [
       {
-        name: "swift",
-        color: "orange-text-gradient",
+        name: "flutter",
+        color: "blue-text-gradient",
       },
     ],
     image: apple,
