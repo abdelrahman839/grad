@@ -81,7 +81,7 @@ const Downloads = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          We have developed two versions of our app one for windows users and one for andorid users and in future we will launch new version for iOS platform.
+          We have developed one version of our app for windows users. <br /> In the future we will launch new versions for mobile users.
         </motion.p>
       </div>
 
