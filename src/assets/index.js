@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import blender from "./tech/blender.png";
+import python from "./tech/python.png";
+import mediapipe from "./tech/mediapipe.jpg";
 
 import step1 from "./steps/step1.png";
 import step2 from "./steps/step2.png";
@@ -53,6 +56,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  blender,
+  python,
+  mediapipe,
   step1,
   step2,
   step3,

@@ -3,22 +3,17 @@ import {
   hospital,
   school,
   event,
-  javascript,
-  typescript,
-  html,
-  css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
+  python,
+  blender,
+  mediapipe,
   step1,
   step2,
   step3,
-  step4,
   threejs,
   Google,
   windows,
@@ -69,32 +64,8 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -117,8 +88,16 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "blender",
+    icon: blender,
+  },
+  {
+    name: "mediapipe",
+    icon: mediapipe,
   },
 ];
 
