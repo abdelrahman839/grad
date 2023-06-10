@@ -6,11 +6,14 @@ import {
   reactjs,
   nodejs,
   mongodb,
-  git,
   figma,
   python,
   blender,
   mediapipe,
+  keras,
+  scikit,
+  librosa,
+  GCSAPI,
   step1,
   step2,
   step3,
@@ -80,10 +83,6 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
     name: "figma",
     icon: figma,
   },
@@ -98,6 +97,22 @@ const technologies = [
   {
     name: "mediapipe",
     icon: mediapipe,
+  },
+  {
+    name: "librosa",
+    icon: librosa,
+  },
+  {
+    name: "scikit",
+    icon: scikit,
+  },
+  {
+    name: "keras",
+    icon: keras,
+  },
+  {
+    name: "GCSAPI",
+    icon: GCSAPI,
   },
 ];
 
@@ -121,8 +136,8 @@ const steps = [
     step: "Second step",
     points: [
       "Download the application based on your operating system.",
-      "The app is now for windows and android.",
-      "In the future the app will work on iOS."
+      "The app is now for windows only.",
+      "In the future the app will work on iOS & android."
     ],
   },
   {

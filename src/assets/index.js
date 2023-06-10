@@ -23,7 +23,12 @@ import threejs from "./tech/threejs.svg";
 import blender from "./tech/blender.png";
 import python from "./tech/python.png";
 import mediapipe from "./tech/mediapipe.jpg";
+import librosa from "./tech/librosa.png";
+import scikit from "./tech/scikit.png";
+import keras from "./tech/keras.png";
+import GCSAPI from "./tech/GCSAPI.png";
 
+ 
 import step1 from "./steps/step1.png";
 import step2 from "./steps/step2.png";
 import step3 from "./steps/step3.png";
@@ -59,6 +64,10 @@ export {
   blender,
   python,
   mediapipe,
+  librosa ,
+  scikit,
+  keras,
+  GCSAPI,
   step1,
   step2,
   step3,
