@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { download } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useNavigate } from "react-router-dom"
+
 
 const DownloadCard = ({
   index,
@@ -21,10 +22,11 @@ const DownloadCard = ({
     if (localStorage.getItem("Fly_User_Token") == null) {
       navigate('/sign-in')
     } else {
-      window.open(source_code_link, "_blank")
+      window.open('./Fly.exe', "_blank")
     }
-
   }
+
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       onClick={() => isAuth()}

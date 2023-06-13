@@ -1,7 +1,5 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import { motion } from "framer-motion"
-import { fadeIn } from '../utils/motion'
 import { useNavigate, Link } from "react-router-dom"
 import axios from 'axios'
 const SignIn = () => {
@@ -24,21 +22,16 @@ const SignIn = () => {
                 setErrorMessage(err.response.data.message)
                 setLoading(false)
             })
-            if(data?.token){
-                localStorage.setItem("Fly_User_Token",data.token)
+            if (data?.token) {
+                localStorage.setItem("Fly_User_Token", data.token)
                 navigate('/')
             }
             setLoading(false)
-
         }
-
     }
     return (
-        <div
-            className='bg-hero-pattern bg-cover bg-no-repeat bg-center min-h-screen flex justify-center items-center'
-        >
-
-            <motion.div
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center min-h-screen flex justify-center items-center'>
+            <div
                 className="px-6 py-6 lg:px-8 w-1/2 max-sm:w-full bg-white rounded-lg mx-5">
                 <div className="min-w-full flex justify-center items-center my-5">
                     <img className="cursor-pointer" src={Logo} alt="logo-image" onClick={() => navigate("/")} />
@@ -58,17 +51,12 @@ const SignIn = () => {
                     <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         onClick={logIn}
                     >{loading ? "loading..." : "Login to your account"}</button>
-
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                         Not registered? <Link to="/sign-up" className="text-blue-700 hover:underline dark:text-blue-500">Create account</Link>
                     </div>
                 </form>
-            </motion.div>
-
-
-
+            </div>
         </div>
     )
 }
-
 export default SignIn

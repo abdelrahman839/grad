@@ -1,6 +1,5 @@
 import React from 'react'
 import { About, Contact, HTU, Tools, Hero, Navbar, Downloads, StarsCanvas } from '../components'
-
 const Home = () => {
     return (
         <div className='relative z-0 bg-primary'>
@@ -12,7 +11,6 @@ const Home = () => {
             <HTU />
             <Tools />
             <Downloads />
-
             <div className='relative z-0'>
                 <Contact />
                 <StarsCanvas />
@@ -20,5 +18,4 @@ const Home = () => {
         </div>
     )
 }
-
 export default Home
